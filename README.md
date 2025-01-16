@@ -26,5 +26,3 @@ UPay is a professional USDT / PYUSD payment platform that provides merchants wit
 4. Then you can read the subsequent documentation and try to initiate a Submit Order request through the interface.
 
 If you encounter any problems during the access process, you can contact online customer service to get in touch with us at any time.
-
-[**Contact us**](https://t.me/UPay_ink)

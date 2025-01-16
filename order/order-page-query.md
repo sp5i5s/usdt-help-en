@@ -12,9 +12,9 @@
 
 | Field Name | Field Type | Required | Signature | Instruction
 | --------- | -------- | -------- | -------- | -------- |
-| appId     | string   | 是       | 是       |  APP ID   |
-| pageNo    | string   | 是       | 是       |  Pages     |
-| signature | string   | 是       | 是       | Data signature |
+| appId     | string   | True       | True       |  APP ID   |
+| pageNo    | string   | True       | True       |  Pages     |
+| signature | string   | True       | True       | Data signature |
 
 **Return value data parameter：**
 

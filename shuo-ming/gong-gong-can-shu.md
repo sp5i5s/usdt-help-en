@@ -1,6 +1,6 @@
 # 📘 Public Parameters
 
-**Prod Request Gateway：**https://upay.ac
+**Prod Request Gateway：**http://upay.ac
 
 **Response Parameters：**
 
