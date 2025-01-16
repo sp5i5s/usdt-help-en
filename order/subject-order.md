@@ -4,11 +4,11 @@
 
 > Note: Users must pay strictly according to the order amount. If the payment amount is inconsistent, the order will not be processed.
 
-**URL：**/v1/order/apply
+**URL：** /v1/order/apply
 
-**Method：**POST
+**Method：** POST
 
-**Parameter Type：**application/json
+**Parameter Type：** application/json
 
 **Parameter ：**
 

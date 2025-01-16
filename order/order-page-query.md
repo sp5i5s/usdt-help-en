@@ -2,11 +2,11 @@
 
 > This interface allows merchants to query order information in pages, with a maximum of 100 items per page.
 
-**URL：**/v1/order/queryall
+**URL：** /v1/order/queryall
 
-**Method：**POST
+**Method：** POST
 
-**Parameter Type：**application/json
+**Parameter Type：** application/json
 
 **Parameter：**
 

@@ -2,11 +2,11 @@
 
 > This interface allows merchants to actively query order information.
 
-**URL：**/v1/order/search
+**URL：** /v1/order/search
 
-**Method：**POST
+**Method：** POST
 
-**Parameter Type:**application/json
+**Parameter Type:** application/json
 
 **Parameter：**
 

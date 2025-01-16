@@ -2,9 +2,9 @@
 
 > After the order is completed, the system will automatically send a notification message to the callback address (notifyUrl) associated with the order to inform you of the final status of the order.
 
-**Method：**POST
+**Method：** POST
 
-**Parameter Type：**application/json
+**Parameter Type：** application/json
 
 **Parameter：**
 
