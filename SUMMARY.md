@@ -15,9 +15,3 @@
 * [Order Asynchronous Notification](order/order-sync-notice.md)
 * [Manual replenishment order](order/repair-order.md)
 * [Cashier](order/checkout.md)
-
-## OTHER
-
-* [UPlay使用文档](basics/editor.md)
-* [收款演示](basics/markdown.md)
-* [技术支持](basics/images-and-media.md)
