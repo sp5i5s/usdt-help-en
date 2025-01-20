@@ -10,13 +10,13 @@
 
 | Field Name | Field Type | Required | Signature | Instruction
 | --- | --- | --- | --- | --- |
-| appId | string  | True  | True |  APP ID
-|  merchantOrderNo |  string | True  | True | Merchant order number
-|  chainType | string  |True  | True | Network: 1: Tron (TRC20)2: PayPal (PYUSD)3: Ethereum (ERC20)  
-|  fiatAmount| string  |True  | True | Amount, Unit: USDT / PYUSD
+| app_id | string  | True  | True |  APP ID
+|  merchant_order_no |  string | True  | True | Merchant order number
+|  chain_type | string  |True  | True | Network: 1: Tron (TRC20)2: PayPal (PYUSD)3: Ethereum (ERC20)  
+|  fiat_amount| string  |True  | True | Amount, Unit: USDT / PYUSD
 |  attach| string   |False  | False | User-defined data will be returned unchanged when calling back to notifyUrl.
-|  notifyUrl| string   |True  | True | 接收异步通知的回调地址。必须为可直接访问的 URL，不能带参数、session 验证、csrf 验证
-|  redirectUrl| string   |False  | False | 支付成功后，前端重定向地址。务必包含 http:// 或 https:// 开头
+|  notify_url| string   |True  | True | 接收异步通知的回调地址。必须为可直接访问的 URL，不能带参数、session 验证、csrf 验证
+|  redirect_url| string   |False  | False | 支付成功后，前端重定向地址。务必包含 http:// 或 https:// 开头
 |  signature | string  |True  | True | Data signature
 
 ## Notification return：

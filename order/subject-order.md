@@ -4,7 +4,7 @@
 
 > Note: Users must pay strictly according to the order amount. If the payment amount is inconsistent, the order will not be processed.
 
-**URL：** /v1/order/apply
+**URL：** /v1/orders/apply
 
 **Method：** POST
 
@@ -14,22 +14,22 @@
 
 | Field Name        | Field Type | Required | Signature | Instruction |
 | --------------- | -------- | -------- | -------- | ----------------------------------------------------------------------------------- |
-| appId           | string   | True       | True       | APP ID                                                                              |
-| merchantOrderNo | string   | True       | True       | The order number generated independently by the merchant must be unique on the merchant's end.                                        |
-| chainType       | string   | True       | True       | Network: 1: Tron (TRC20) 2: Ethereum (ERC20)3: PayPal (PYUSD)                                      |
-| fiatAmount      | string   | True       | True       | Legal currency amount, accurate to 4 decimal places                                                      |
+| app_id           | string   | True       | True       | APP ID                                                                              |
+| merchant_order_no | string   | True       | True       | The order number generated independently by the merchant must be unique on the merchant's end.                                        |
+| chain_type       | string   | True       | True       | Network: TRC20 ERC20  BEP20                                      |
+| fiat_amount      | string   | True       | True       | Legal currency amount, accurate to 4 decimal places                                                      |
 | attach          | string   | False       | False       | User-defined data, if it is not empty, will be returned as is when calling back to notifyUrl.                                |
-| notifyUrl       | string   | True       | True       | The callback address for receiving asynchronous notifications. It must be a directly accessible URL and cannot contain parameters, session verification, or csrf verification. |
-| redirectUrl     | string   | False       | False       | After the payment is successful, the front-end redirects the address. Be sure to include "http://" or "https://" at the beginning                       |
+| notify_url       | string   | True       | True       | The callback address for receiving asynchronous notifications. It must be a directly accessible URL and cannot contain parameters, session verification, or csrf verification. |
+| redirect_url     | string   | False       | False       | After the payment is successful, the front-end redirects the address. Be sure to include "http://" or "https://" at the beginning                       |
 | signature       | string   | True       | True       | Data signature                                                                            |
 
 **Return value data parameter：：**
 
 | Field Name        | Field Type | Instruction                                         |
 | --------------- | -------- | -------------------------------------------- |
-| appId           | string   | APP ID                                       |
-| orderNo         | string   | UPay order number                                  |
-| merchantOrderNo | string   | Merchant order number                                   |
+| app_id           | string   | APP ID                                       |
+| order_no         | string   | UPay order number                                  |
+| merchant_order_no | string   | Merchant order number                                   |
 | crypto          | string   | Order amount, unit USDT / PYUSD                  |
 | status          | string   | Order status                                     |
-| payUrl          | string   | Cashier address, merchants can jump directly to this address for users to pay. |
+| pay_url          | string   | Cashier address, merchants can jump directly to this address for users to pay. |

@@ -2,7 +2,7 @@
 
 > This interface allows merchants to query order information in pages, with a maximum of 100 items per page.
 
-**URL：** /v1/order/queryall
+**URL：** /v1/orders/queryall
 
 **Method：** POST
 
@@ -21,17 +21,18 @@
 | Field Name | Field Type | Instruction     |
 | -------- | -------- | -------- |
 | total    | string   | Total     |
-| pageNo   | string   | Pages     |
-| pageSize | string   | Number of entries per page |
-| list     | []array  | Order list |
+| current_page   | string   | Pages     |
+| last_page | string   | Number of entries per page |
+| data     | []array  | Order list |
 
 **Return value list Parameters:**
 | Field Name | Field Type | Instruction
 | --- | --- | --- |
-| appId | string | APP ID
-|orderNo | string | UPay order number
-| merchantOrderNo | string | Merchant order number
-| crypto| string | Order amount, unit USDT / PYUSD
+| order_id | string | APP ID
+|order_no | string | UPay order number
+| merchant_order_no | string | Merchant order number
+| amount| string | Order amount, unit USDT / PYUSD
 | status | string | Order status
 | attach | string | User-defined data
+| chain_type | string | Network: TRC20 ERC20  BEP20
 | createdAt| string | Order creation time
